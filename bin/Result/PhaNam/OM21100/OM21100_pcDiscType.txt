@@ -1,0 +1,1 @@
+{"data":[{"Code":"D","Descr":"Ch?ng T?"},{"Code":"G","Descr":"Nhóm Các S?n Ph?m"},{"Code":"L","Descr":"S?n Ph?m"}], "total": 0}

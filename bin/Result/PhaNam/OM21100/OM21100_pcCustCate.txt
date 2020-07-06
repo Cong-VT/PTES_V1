@@ -1,0 +1,1 @@
+{"data":[{"Code":"KH01","Descr":"Khách s?"},{"Code":"KH02","Descr":"Khách L?"},{"Code":"KHVIP","Descr":"Khách VIP"},{"Code":"KHVIP2","Descr":"Khách Vip 2"}], "total": 0}

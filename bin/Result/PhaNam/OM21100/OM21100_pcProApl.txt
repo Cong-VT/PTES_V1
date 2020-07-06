@@ -1,0 +1,1 @@
+{"data":[{"Code":"A","Descr":"T?t C?"},{"Code":"M","Descr":"So Trùng SP Bán v?i SP KM"}], "total": 0}

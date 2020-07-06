@@ -1,0 +1,1 @@
+{"data":[{"Code":"AC","Descr":"Ch??ng Trình Tích L?y Tr? Ngay","Type":"3"},{"Code":"PR","Descr":"Ch??ng Trình Khuy?n Mãi","Type":"1"},{"Code":"SP","Descr":"Chính Sách Bán Hàng","Type":"2"}], "total": 0}

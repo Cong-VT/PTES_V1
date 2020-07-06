@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="1" it="0" lt="0" ct="0" ts="1589269818098" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Release_SalesOrd 1-1" dt="text" by="848" sby="0" sc="1" ec="0" ng="1" na="1" hn="HQ_PC015">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">JMeterVariables:
+BranchID=7989713
+Browser=null
+ClickKey=1
+DateExc=2020-05-12
+InvtID1=TDT0377
+InvtID1_KG=0.21
+InvtID1_Name=PE rope 2mm Blue 90M L3
+InvtID1_PriceLot=9999
+InvtID1_QtyLot=2000
+InvtID2=TDT0397
+InvtID2_Name=PE rope 2mm 90M L3 (Red-Green-Blue-Yellow-Orange) Cock Brand
+InvtID2_PriceLot=7777
+InvtID2_QtyLot=2000
+IsGenQRCOde=1
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@204eb452
+OrdNbr=DO191100001
+OrdNbrKey=SO026591
+PassWord=P@ssw0rd
+ProjectCode=ChevronVN
+QtyPACScan=5
+QtySKU=2
+START.HMS=144712
+START.MS=1589269632728
+START.YMD=20200512
+ScreenCode_CrtOrd=OM10100
+ServerURLs=https://portal.hqsoft.vn:7443/ChevronVN/
+TESTSTART.MS=1589269814202
+TimeDOM=1
+TimeOut=20
+TokenTest=PTeS_R1_2019_Date:201911070935
+UserDist=7989713
+UserName=Admin
+__jm__Release_SalesOrd__idx=0
+screenshot=0
+stvwait=300
+
+</responseData>
+  <samplerData class="java.lang.String">JMeterVariables
+</samplerData>
+</sample>
+
+</testResults>

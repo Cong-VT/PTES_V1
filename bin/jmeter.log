@@ -1,0 +1,50 @@
+2020-06-30 12:54:46,376 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-06-30 12:54:46,406 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2020-06-30 12:54:46,414 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2020-06-30 12:54:46,422 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-06-30 12:54:46,422 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2020-06-30 12:54:46,422 INFO o.a.j.JMeter: java.version=1.8.0_202
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: os.name=Windows 10
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: os.arch=amd64
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: os.version=10.0
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: file.encoding=Cp1252
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: java.awt.headless=null
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-06-30 12:54:46,423 INFO o.a.j.JMeter: Available Processors =4
+2020-06-30 12:54:46,433 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-06-30 12:54:46,433 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-06-30 12:54:46,434 INFO o.a.j.JMeter: JMeterHome=D:\1.Working\101.PTeS\PTeS_R1\Runner
+2020-06-30 12:54:46,434 INFO o.a.j.JMeter: user.dir  =D:\1.Working\101.PTeS\PTeS_R1\Runner\bin
+2020-06-30 12:54:46,434 INFO o.a.j.JMeter: PWD       =D:\1.Working\101.PTeS\PTeS_R1\Runner\bin
+2020-06-30 12:54:46,437 INFO o.a.j.JMeter: IP: 192.168.130.152 Name: HQ_PC015 FullName: HQ_PC015.hqsoftvn.com
+2020-06-30 12:54:46,917 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2020-06-30 12:54:46,962 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.sun.java.swing.plaf.windows.WindowsLookAndFeel [Darcula]
+2020-06-30 12:54:46,962 INFO o.a.j.JMeter: Setting LAF to: com.sun.java.swing.plaf.windows.WindowsLookAndFeel
+2020-06-30 12:54:47,011 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2020-06-30 12:54:49,073 WARN o.j.r.PluginManager: Found JAR conflict: D:\1.Working\101.PTeS\PTeS_R1\Runner\lib\okhttp-3.11.0.jar and D:\1.Working\101.PTeS\PTeS_R1\Runner\lib\okhttp-3.10.0.jar
+2020-06-30 12:54:49,075 WARN o.j.r.PluginManager: Found JAR conflict: D:\1.Working\101.PTeS\PTeS_R1\Runner\lib\okio-1.14.1.jar and D:\1.Working\101.PTeS\PTeS_R1\Runner\lib\okio-1.14.0.jar
+2020-06-30 12:54:49,075 WARN o.j.r.PluginManager: Found JAR conflict: D:\1.Working\101.PTeS\PTeS_R1\Runner\lib\ext\jmeter-plugins-manager-1.3.jar and D:\1.Working\101.PTeS\PTeS_R1\Runner\lib\ext\jmeter-plugins-manager-0.17.jar
+2020-06-30 12:54:51,392 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-06-30 12:54:51,392 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-06-30 12:54:51,392 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-06-30 12:54:51,392 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-06-30 12:54:51,393 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-06-30 12:54:51,393 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-06-30 12:54:51,589 INFO o.a.j.e.KeyToolUtils: Exception checking for keytool existence, will return false, try another way.
+2020-06-30 12:54:51,802 INFO o.a.j.e.KeyToolUtils: keytool found at 'C:\Program Files\Java\jre1.8.0_202\bin\keytool'
+2020-06-30 12:54:51,802 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file D:\1.Working\101.PTeS\PTeS_R1\Runner\bin\proxyserver.jks
+2020-06-30 12:54:52,077 INFO o.a.j.s.FileServer: Default base='D:\1.Working\101.PTeS\PTeS_R1\Runner\bin'
+2020-06-30 12:54:53,365 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-06-30 12:54:53,367 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2020-06-30 12:54:53,367 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-06-30 12:54:53,367 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-06-30 12:54:53,481 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, jpgc-graphs-additional=2.0, jpgc-autostop=0.1, jpgc-graphs-composite=2.0, jpgc-csl=0.1, jpgc-functions=2.0, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jmeter.pack-listener=1.7, jpgc-json=2.6, jpgc-prmctl=0.3, jpgc-perfmon=2.1, jpgc-plugins-manager=0.17, jpgc-webdriver=3.1, jpgc-tst=2.1, jpgc-csvars=0.1, jmeter-core=5.1.1, jmeter-ftp=5.1.1, jmeter-http=5.1.1, jmeter-jdbc=5.1.1, jmeter-jms=5.1.1, jmeter-junit=5.1.1, jmeter-java=5.1.1, jmeter-ldap=5.1.1, jmeter-mail=5.1.1, jmeter-mongodb=5.1.1, jmeter-native=5.1.1, jmeter-tcp=5.1.1, jmeter-components=5.1.1, jpgc-standard=2.0]
+2020-06-30 12:54:53,484 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-functions, jpgc-casutg, jpgc-dummy, jpgc-json, jpgc-prmctl, jpgc-plugins-manager, jpgc-webdriver, jpgc-tst]
+2020-06-30 12:56:06,636 INFO o.a.j.g.a.Load: Loading file: D:\1.Working\101.PTeS\PTeS_R1\Runner\bin\Project\TAC\SFA\TAC_Full_Download.jmx
+2020-06-30 12:56:06,636 INFO o.a.j.s.FileServer: Set new base='D:\1.Working\101.PTeS\PTeS_R1\Runner\bin\Project\TAC\SFA'
+2020-06-30 12:56:06,891 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-06-30 12:56:06,903 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-06-30 12:56:06,905 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-06-30 12:56:06,909 INFO o.a.j.s.SaveService: Loading file: D:\1.Working\101.PTeS\PTeS_R1\Runner\bin\Project\TAC\SFA\TAC_Full_Download.jmx
+2020-06-30 12:56:08,389 INFO o.a.j.s.FileServer: Set new base='D:\1.Working\101.PTeS\PTeS_R1\Runner\bin\Project\TAC\SFA'

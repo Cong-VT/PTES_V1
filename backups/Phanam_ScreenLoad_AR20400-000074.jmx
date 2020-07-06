@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="PhaNam_AR20400" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="ServerURLs" elementType="Argument">
+            <stringProp name="Argument.name">ServerURLs</stringProp>
+            <stringProp name="Argument.value">https://portal.hqsoft.vn:7443/PhaNamPerform</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ProjectCode" elementType="Argument">
+            <stringProp name="Argument.name">ProjectCode</stringProp>
+            <stringProp name="Argument.value">PhaNam</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="UserName" elementType="Argument">
+            <stringProp name="Argument.name">UserName</stringProp>
+            <stringProp name="Argument.value">Admin</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PassWord" elementType="Argument">
+            <stringProp name="Argument.name">PassWord</stringProp>
+            <stringProp name="Argument.value">P@ssw0rd</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DateExc" elementType="Argument">
+            <stringProp name="Argument.name">DateExc</stringProp>
+            <stringProp name="Argument.value">${__groovy(new Date().format(&apos;yyyy-MM-dd&apos;),)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ClickKey" elementType="Argument">
+            <stringProp name="Argument.name">ClickKey</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="stvwait" elementType="Argument">
+            <stringProp name="Argument.name">stvwait</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ScreenCode" elementType="Argument">
+            <stringProp name="Argument.name">ScreenCode</stringProp>
+            <stringProp name="Argument.value">AR20400</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TimeDOM" elementType="Argument">
+            <stringProp name="Argument.name">TimeDOM</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="screenshot" elementType="Argument">
+            <stringProp name="Argument.name">screenshot</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AR20400_FullTest_Private" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc -Config Driver" enabled="true">
+          <stringProp name="TestPlan.comments">Config Chrome</stringProp>
+          <stringProp name="WebDriverConfig.proxy_type">DIRECT</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host">localhost</stringProp>
+          <intProp name="WebDriverConfig.http_port">8888</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">false</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.maximize_browser">false</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">true</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">true</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">StvDriver\chromedriver.exe</stringProp>
+          <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc -Login" enabled="true">
+          <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+
+
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+WDS.sampleResult.sampleStart();
+WDS.browser.get(&apos;${ServerURLs}/&apos;);
+// Input UserName
+	var txtUserName= WDS.browser.findElement(org.openqa.selenium.By.id(&quot;txtUserName-inputEl&quot;));	
+	txtUserName.click();
+	txtUserName.sendKeys(&quot;PhaNam&quot;);
+// Input P@ssw0rd
+	var txtPassword= WDS.browser.findElement(org.openqa.selenium.By.id(&quot;txtPassword-inputEl&quot;));
+	txtPassword.click();
+	txtPassword.sendKeys(&quot;P@ssw0rd&quot;);
+// Click Login
+	var btnlogin= WDS.browser.findElement(org.openqa.selenium.By.id(&quot;btnLogin-btnIconEl&quot;));
+	//var txtUserName= WDS.browser.findElement(org.openqa.selenium.By.Id(&quot;txtUserName&quot;));
+	btnlogin.click();
+	wait.until(conditions.invisibilityOfElementLocated(pkg.By.linkText(&apos;... vui&apos;)));
+	wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;btnNotification-btnIconEl&apos;)));// wait key appear	
+WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="CustID_DataLoad" elementType="Argument">
+              <stringProp name="Argument.name">CustID_DataLoad</stringProp>
+              <stringProp name="Argument.value">PTeS00003 </stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc-AR20400_ScreenLoad" enabled="true">
+          <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 15)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+
+
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+
+
+WDS.sampleResult.sampleStart();
+var starttime = new Date().getTime();// starttime
+WDS.browser.get(&apos;${ServerURLs}/${ScreenCode}&apos;);	
+
+wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;menuClickbtnRefresh-btnWrap&apos;)));// wait key appear
+//var cboKey= WDS.browser.findElement((pkg.By.id(&apos;menuClickbtnNext-btnIconEl&apos;)));
+var endtimeDOM = new Date().getTime();// starttime
+var DOMTimeScr = endtimeDOM-starttime;	
+var flag =0 ;
+var chkmask=null	
+try {
+	do {
+		stvwait(200);
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   chua load xong :&apos; + chkmask);	
+		var chkmask= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@class,&apos;x-mask&apos;)]&quot;));		
+	}while (chkmask!=null)
+}catch(exc)
+	{	
+		vars.put(chkmask,0)//unmask
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;    unmask :&apos; + chkmask);
+		}
+
+
+var cbokey_Arrow= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[3]&quot;));
+do{	
+	cbokey_Arrow.click();	
+	wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;)));
+	var check =WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;));
+	WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Da co du lieu check &apos; + check);	
+	if (check==null)
+			{
+				stvwait(300);
+			}
+	}while  (check==null)
+
+
+
+// Exec to verify 	
+if(${ClickKey}==1)
+	{
+	var cboKey= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(@id, &apos;txtCustName&apos;)]&quot;)));
+	//cboKey.click();	
+	cbokey_Arrow.click();
+	WDS.sampleResult.sampleEnd();	
+	}
+else
+	{		
+		WDS.sampleResult.sampleEnd();		
+	}
+
+if (${TimeDOM} ==1)
+	{
+	WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   Time to Screen Load - DOM Done  :&apos; + DOMTimeScr +&apos; (ms)&apos;);
+	}
+
+if(${screenshot}==1)
+	{
+var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+FileControl.copyFile(screenshot, new File(&quot;ImgResult/${ProjectCode}/${DateExc}/${ScreenCode}/&quot; + &apos;${ScreenCode}_${DateExc}_Screenload.png&apos;));
+	}
+
+
+    </stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">def response = prev.getResponseDataAsString();
+def path =&quot;D:\\1.Working\\100.JM\\Build\\PTeS_R1\\Runner\\bin\\Result\\PhaNam\\OM21100&quot;;
+def pathdata =&quot;D:\\1.Working\\100.JM\\Build\\PTeS_R1\\Runner\\bin\\Result\\PhaNam\\OM21100\\DataInfor&quot;;
+def filedata=&quot;OM21100_pcInventoryActiveByBranchFree.txt&quot;;
+def datacount=&quot;OM21100_countdata.txt&quot;;
+
+def json = new groovy.json.JsonSlurper().parseText(response)
+def data_size=json.data.size().toString();
+new File(path,filedata)&lt;&lt;response
+new File(pathdata,datacount)&lt;&lt; &quot;\n 488 /PhaNamPerform/HQ/GetData?_dc=1570698800058&amp;action=read : [ &quot; + data_size +&quot;]&quot;</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc-AR20400_DataLoad" enabled="true">
+          <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+WDS.sampleResult.sampleStart();
+wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]&quot;)));
+/*
+var cbokey_Arrow= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[3]&quot;));
+do{	
+	cbokey_Arrow.click();	
+	wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;)));
+	var check =WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;));
+	WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Da co du lieu check &apos; + check);	
+	if (check==null)
+			{
+				stvwait(300);
+			}
+	}while  (check==null)
+
+cbokey_Arrow.click();
+//wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;)));
+*/
+var cbokey_Arrow= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[3]&quot;));
+cbokey_Arrow.click();
+var cbokey= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;));	
+	WDS.sampleResult.sampleStart();// Set Start Time
+	cbokey.click();
+
+// Verify done load data
+wait.until(conditions.invisibilityOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;Please wait...&apos;)]&quot;)));
+
+WDS.sampleResult.sampleEnd();
+if(${screenshot}==1)
+	{
+	var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+	FileControl.copyFile(screenshot, new File(&quot;ImgResult/${ProjectCode}/${DateExc}/${ScreenCode}/&quot; + &apos;${ScreenCode}_${DateExc}_DataLoad.png&apos;));
+	}
+
+
+
+
+	</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">2000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc-AR20400_DataLoad_ClosedData" enabled="true">
+          <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+wait.until(conditions.invisibilityOfElementLocated(pkg.By.xpath(&quot;//*[contains(@class,&apos;x-mask&apos;)]&quot;)));
+WDS.sampleResult.sampleStart();
+var cboOrderNbr_Arrow= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[2]&quot;)));
+	cboOrderNbr_Arrow.click();
+//wait done reload after closed data
+wait.until(conditions.invisibilityOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;Khách sỉ&apos;)]&quot;)));
+
+
+WDS.sampleResult.sampleEnd();
+var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+FileControl.copyFile(screenshot, new File(&quot;ImgResult/${ProjectCode}/${DateExc}/${ScreenCode}/&quot; + &apos;${ScreenCode}_${DateExc}_DataLoad_ClosedData.png&apos;));
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </LoopController>
+        <hashTree>
+          <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc-AR20400_ScreenLoad" enabled="true">
+            <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+
+
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+
+
+WDS.sampleResult.sampleStart();
+var starttime = new Date().getTime();// starttime
+WDS.browser.get(&apos;${ServerURLs}/${ScreenCode}&apos;);	
+
+wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;menuClickbtnRefresh-btnWrap&apos;)));// wait key appear
+//var cboKey= WDS.browser.findElement((pkg.By.id(&apos;menuClickbtnNext-btnIconEl&apos;)));
+var endtimeDOM = new Date().getTime();// starttime
+var DOMTimeScr = endtimeDOM-starttime;	
+var flag =0 ;
+var chkmask=null	
+try {
+	do {
+		stvwait(200);
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   chua load xong :&apos; + chkmask);	
+		var chkmask= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@class,&apos;x-mask&apos;)]&quot;));		
+	}while (chkmask!=null)
+}catch(exc)
+	{	
+		vars.put(chkmask,0)//unmask
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;    unmask :&apos; + chkmask);
+		}
+
+
+var cbokey_Arrow= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[3]&quot;));
+do{	
+	cbokey_Arrow.click();	
+	wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;)));
+	var check =WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;));
+	WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Da co du lieu check &apos; + check);	
+	if (check==null)
+			{
+				stvwait(300);
+			}
+	}while  (check==null)
+
+
+
+// Exec to verify 	
+if(${ClickKey}==1)
+	{
+	var cboKey= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(@id, &apos;txtCustName&apos;)]&quot;)));
+	//cboKey.click();	
+	cbokey_Arrow.click();
+	WDS.sampleResult.sampleEnd();	
+	}
+else
+	{		
+		WDS.sampleResult.sampleEnd();		
+	}
+
+if (${TimeDOM} ==1)
+	{
+	WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   Time to Screen Load - DOM Done  :&apos; + DOMTimeScr +&apos; (ms)&apos;);
+	}
+
+if(${screenshot}==1)
+	{
+var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+FileControl.copyFile(screenshot, new File(&quot;ImgResult/${ProjectCode}/${DateExc}/${ScreenCode}/&quot; + &apos;${ScreenCode}_${DateExc}_Screenload.png&apos;));
+	}
+
+
+    </stringProp>
+            <stringProp name="WebDriverSampler.parameters"></stringProp>
+            <stringProp name="WebDriverSampler.language">javascript</stringProp>
+          </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+          <hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">def response = prev.getResponseDataAsString();
+def path =&quot;D:\\1.Working\\100.JM\\Build\\PTeS_R1\\Runner\\bin\\Result\\PhaNam\\OM21100&quot;;
+def pathdata =&quot;D:\\1.Working\\100.JM\\Build\\PTeS_R1\\Runner\\bin\\Result\\PhaNam\\OM21100\\DataInfor&quot;;
+def filedata=&quot;OM21100_pcInventoryActiveByBranchFree.txt&quot;;
+def datacount=&quot;OM21100_countdata.txt&quot;;
+
+def json = new groovy.json.JsonSlurper().parseText(response)
+def data_size=json.data.size().toString();
+new File(path,filedata)&lt;&lt;response
+new File(pathdata,datacount)&lt;&lt; &quot;\n 488 /PhaNamPerform/HQ/GetData?_dc=1570698800058&amp;action=read : [ &quot; + data_size +&quot;]&quot;</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
+          </hashTree>
+          <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc-AR20400_DataLoad" enabled="true">
+            <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+WDS.sampleResult.sampleStart();
+wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]&quot;)));
+/*
+var cbokey_Arrow= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[3]&quot;));
+do{	
+	cbokey_Arrow.click();	
+	wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;)));
+	var check =WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;));
+	WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; Da co du lieu check &apos; + check);	
+	if (check==null)
+			{
+				stvwait(300);
+			}
+	}while  (check==null)
+
+cbokey_Arrow.click();
+//wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;)));
+*/
+var cbokey_Arrow= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[3]&quot;));
+cbokey_Arrow.click();
+var cbokey= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(text(),&apos;${CustID_DataLoad}&apos;)]&quot;));	
+	WDS.sampleResult.sampleStart();// Set Start Time
+	cbokey.click();
+
+// Verify done load data
+wait.until(conditions.invisibilityOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;Please wait...&apos;)]&quot;)));
+
+WDS.sampleResult.sampleEnd();
+if(${screenshot}==1)
+	{
+	var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+	FileControl.copyFile(screenshot, new File(&quot;ImgResult/${ProjectCode}/${DateExc}/${ScreenCode}/&quot; + &apos;${ScreenCode}_${DateExc}_DataLoad.png&apos;));
+	}
+
+
+
+
+	</stringProp>
+            <stringProp name="WebDriverSampler.parameters"></stringProp>
+            <stringProp name="WebDriverSampler.language">javascript</stringProp>
+          </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+          <hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">2000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+          <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc-AR20400_DataLoad_ClosedData" enabled="true">
+            <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+wait.until(conditions.invisibilityOfElementLocated(pkg.By.xpath(&quot;//*[contains(@class,&apos;x-mask&apos;)]&quot;)));
+WDS.sampleResult.sampleStart();
+var cboOrderNbr_Arrow= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(@id, &apos;cboCustId-triggerWrap&apos;)]/tbody/tr/td[2]&quot;)));
+	cboOrderNbr_Arrow.click();
+//wait done reload after closed data
+wait.until(conditions.invisibilityOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;Khách sỉ&apos;)]&quot;)));
+
+
+WDS.sampleResult.sampleEnd();
+var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+FileControl.copyFile(screenshot, new File(&quot;ImgResult/${ProjectCode}/${DateExc}/${ScreenCode}/&quot; + &apos;${ScreenCode}_${DateExc}_DataLoad_ClosedData.png&apos;));
+</stringProp>
+            <stringProp name="WebDriverSampler.parameters"></stringProp>
+            <stringProp name="WebDriverSampler.language">javascript</stringProp>
+          </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+          <hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc - Quit" enabled="true">
+          <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+
+
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+var handles = WDS.browser.getWindowHandles() 
+var iterator = handles.iterator()
+var currentHandle = WDS.browser.getWindowHandle()
+while(iterator.hasNext()) {
+    var handle = iterator.next() 
+    if (handle != currentHandle) {
+        WDS.browser.switchTo().window(handle)
+        WDS.browser.close()
+    }
+}
+
+WDS.browser.switchTo().defaultContent()
+stvwait(3000);
+WDS.browser.close()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="false">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc -ServerAPP_CPU" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">Result\SA00500_Result_ServerApp_CPU.jtl</stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+        <collectionProp name="metricConnections">
+          <collectionProp name="367712295">
+            <stringProp name="-2051155110">192.168.120.8</stringProp>
+            <stringProp name="1600768">4444</stringProp>
+            <stringProp name="66952">CPU</stringProp>
+            <stringProp name="0"></stringProp>
+          </collectionProp>
+        </collectionProp>
+      </kg.apc.jmeter.perfmon.PerfMonCollector>
+      <hashTree/>
+      <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc -ServerAPP_RAM" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">Result\SA00500_Result_ServerApp_RAM.jtl</stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+        <collectionProp name="metricConnections">
+          <collectionProp name="-1933002026">
+            <stringProp name="-2051155110">192.168.120.8</stringProp>
+            <stringProp name="1600768">4444</stringProp>
+            <stringProp name="-1993889503">Memory</stringProp>
+            <stringProp name="0"></stringProp>
+          </collectionProp>
+        </collectionProp>
+      </kg.apc.jmeter.perfmon.PerfMonCollector>
+      <hashTree/>
+      <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc -ServerAPP_Disk" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">Result\SA00500_Result_ServerApp_disk.jtl</stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+        <collectionProp name="metricConnections">
+          <collectionProp name="-43992775">
+            <stringProp name="-2051155110">192.168.120.8</stringProp>
+            <stringProp name="1600768">4444</stringProp>
+            <stringProp name="2112896831">Disks I/O</stringProp>
+            <stringProp name="0"></stringProp>
+          </collectionProp>
+        </collectionProp>
+      </kg.apc.jmeter.perfmon.PerfMonCollector>
+      <hashTree/>
+      <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc -ServerAPP_NetWork" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">Result\SA00500_Result_ServerApp_NetWork.jtl</stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+        <collectionProp name="metricConnections">
+          <collectionProp name="-1820662010">
+            <stringProp name="-2051155110">192.168.120.8</stringProp>
+            <stringProp name="1600768">4444</stringProp>
+            <stringProp name="-274342153">Network I/O</stringProp>
+            <stringProp name="0"></stringProp>
+          </collectionProp>
+        </collectionProp>
+      </kg.apc.jmeter.perfmon.PerfMonCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>true</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">Result\SA00500_ResultTree.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,1 @@
+{"data":[{"Code":"E","Descr":"Làm tròn"},{"Code":"N","Descr":"Không làm tròn"}], "total": 0}

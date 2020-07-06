@@ -1,0 +1,12 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1570126245000,0,jp@gc - Login,500,"no such element: Unable to locate element: {""method"":""css selector"",""selector"":""#txtUserName\-inputEl""}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HQ_PC015', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(system), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7bd5637eccdb3c693080eb1429212f48
+*** Element info: {Using=id, value=txtUserName-inputEl}",PIN-OM-PP 1-1,text,false,,3467,0,1,1,null,0,0,0
+1570126245208,4347,jp@gc-OM20700_ScreenLoad,200,OK,PIN-OM-PP 1-1,text,true,,137005,0,1,1,https://portal.hqsoft.vn:7443/PhaNamPerform/OM20700,0,0,0
+1570126249800,11270,jp@gc-OM21100_ScreenLoad,200,OK,PIN-OM-PP 1-1,text,true,,339873,0,1,1,https://portal.hqsoft.vn:7443/PhaNamPerform/OM21100,0,0,0

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="SIAMTEST" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="ServerURLs" elementType="Argument">
+            <stringProp name="Argument.name">ServerURLs</stringProp>
+            <stringProp name="Argument.value">https://portal.hqsoft.vn:7443/Siam2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ProjectCode" elementType="Argument">
+            <stringProp name="Argument.name">ProjectCode</stringProp>
+            <stringProp name="Argument.value">SIAMTEST</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="UserName" elementType="Argument">
+            <stringProp name="Argument.name">UserName</stringProp>
+            <stringProp name="Argument.value">Admin</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PassWord" elementType="Argument">
+            <stringProp name="Argument.name">PassWord</stringProp>
+            <stringProp name="Argument.value">P@ssw0rd</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DateExc" elementType="Argument">
+            <stringProp name="Argument.name">DateExc</stringProp>
+            <stringProp name="Argument.value">${__groovy(new Date().format(&apos;yyyy-MM-dd&apos;),)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ClickKey" elementType="Argument">
+            <stringProp name="Argument.name">ClickKey</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="stvwait" elementType="Argument">
+            <stringProp name="Argument.name">stvwait</stringProp>
+            <stringProp name="Argument.value">300</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TimeDOM" elementType="Argument">
+            <stringProp name="Argument.name">TimeDOM</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="screenshot" elementType="Argument">
+            <stringProp name="Argument.name">screenshot</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TimeOut" elementType="Argument">
+            <stringProp name="Argument.name">TimeOut</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">D:\1.Working\101.PTeS\PTeS_R1\Runner\bin\StvDriver\JDBCDriver\sqljdbc_7.4\enu\mssql-jdbc-7.4.1.jre8.jar,D:\1.Working\101.PTeS\PTeS_R1\Runner\bin\StvDriver\JDBCDriver\jtds-1.3.1-dist\jtds-1.3.1.jar</stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="OpenScreen" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc -Config Driver" enabled="true">
+          <stringProp name="TestPlan.comments">Config Chrome</stringProp>
+          <stringProp name="WebDriverConfig.proxy_type">DIRECT</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host">localhost</stringProp>
+          <intProp name="WebDriverConfig.http_port">8888</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">false</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.maximize_browser">false</boolProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">true</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">true</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">StvDriver\chromedriver.exe</stringProp>
+          <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+          <boolProp name="ChromeDriverConfig.insecurecerts_enabled">true</boolProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="OrdNbr" elementType="Argument">
+              <stringProp name="Argument.name">OrdNbr</stringProp>
+              <stringProp name="Argument.value">DO191100001</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="BranchID" elementType="Argument">
+              <stringProp name="Argument.name">BranchID</stringProp>
+              <stringProp name="Argument.value">100043</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="UserDist" elementType="Argument">
+              <stringProp name="Argument.name">UserDist</stringProp>
+              <stringProp name="Argument.value">100043</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="UserAdmin" elementType="Argument">
+              <stringProp name="Argument.name">UserAdmin</stringProp>
+              <stringProp name="Argument.value">admin</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ScreenCode_CrtOrd" elementType="Argument">
+              <stringProp name="Argument.name">ScreenCode_CrtOrd</stringProp>
+              <stringProp name="Argument.value">OM10101</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="QtySKU" elementType="Argument">
+              <stringProp name="Argument.name">QtySKU</stringProp>
+              <stringProp name="Argument.value">2</stringProp>
+              <stringProp name="Argument.desc">SL san pham tren don hang</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID1" elementType="Argument">
+              <stringProp name="Argument.name">InvtID1</stringProp>
+              <stringProp name="Argument.value">TDT0377</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID2" elementType="Argument">
+              <stringProp name="Argument.name">InvtID2</stringProp>
+              <stringProp name="Argument.value">TDT0397</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID1_KG" elementType="Argument">
+              <stringProp name="Argument.name">InvtID1_KG</stringProp>
+              <stringProp name="Argument.value">0.21</stringProp>
+              <stringProp name="Argument.desc">Standard KG</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID1_QtyLot" elementType="Argument">
+              <stringProp name="Argument.name">InvtID1_QtyLot</stringProp>
+              <stringProp name="Argument.value">2000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID2_QtyLot" elementType="Argument">
+              <stringProp name="Argument.name">InvtID2_QtyLot</stringProp>
+              <stringProp name="Argument.value">2000</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID1_PriceLot" elementType="Argument">
+              <stringProp name="Argument.name">InvtID1_PriceLot</stringProp>
+              <stringProp name="Argument.value">9999</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID2_PriceLot" elementType="Argument">
+              <stringProp name="Argument.name">InvtID2_PriceLot</stringProp>
+              <stringProp name="Argument.value">7777</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID2_Name" elementType="Argument">
+              <stringProp name="Argument.name">InvtID2_Name</stringProp>
+              <stringProp name="Argument.value">PE rope 2mm 90M L3 (Red-Green-Blue-Yellow-Orange) Cock Brand</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="InvtID1_Name" elementType="Argument">
+              <stringProp name="Argument.name">InvtID1_Name</stringProp>
+              <stringProp name="Argument.value">PE rope 2mm Blue 90M L3</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="TokenTest" elementType="Argument">
+              <stringProp name="Argument.name">TokenTest</stringProp>
+              <stringProp name="Argument.value">PTeS_R1_2019_Date:201911070935</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="QtyPACScan" elementType="Argument">
+              <stringProp name="Argument.name">QtyPACScan</stringProp>
+              <stringProp name="Argument.value">5</stringProp>
+              <stringProp name="Argument.desc">Số luong kien scan</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="IsGenQRCOde" elementType="Argument">
+              <stringProp name="Argument.name">IsGenQRCOde</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc -${ProjectCode}_Login" enabled="true">
+          <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 60)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+
+
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+WDS.sampleResult.sampleStart();
+WDS.browser.get(&apos;${ServerURLs}/&apos;);
+// Input UserName
+	var txtUserName= WDS.browser.findElement(org.openqa.selenium.By.id(&quot;txtUserName-inputEl&quot;));	
+	txtUserName.click();
+	txtUserName.sendKeys(&quot;${UserName}&quot;);
+// Input P@ssw0rd
+	var txtPassword= WDS.browser.findElement(org.openqa.selenium.By.id(&quot;txtPassword-inputEl&quot;));
+	txtPassword.click();
+	txtPassword.sendKeys(&quot;P@ssw0rd&quot;);
+
+	var txtCaptcha= WDS.browser.findElement(org.openqa.selenium.By.id(&quot;txtCaptcha-inputEl&quot;));
+	txtPassword.click();
+	//txtPassword.sendKeys(&quot;P@ssw0rd&quot;);
+	stvwait(2000);
+	
+// Click Login
+	var btnlogin= WDS.browser.findElement(org.openqa.selenium.By.id(&quot;btnLogin-btnIconEl&quot;));
+	
+	//btnlogin.click();
+	wait.until(conditions.invisibilityOfElementLocated(pkg.By.linkText(&apos;... vui&apos;)));
+	wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;btnProfile-btnWrap&apos;)));// wait key appear	
+WDS.sampleResult.sampleEnd()
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+          <stringProp name="WebDriverSampler.language">javascript</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="SQL_ConfigServer" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="ServerName" elementType="Argument">
+              <stringProp name="Argument.name">ServerName</stringProp>
+              <stringProp name="Argument.value">TRUONGSAD</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="DB_Name" elementType="Argument">
+              <stringProp name="Argument.name">DB_Name</stringProp>
+              <stringProp name="Argument.value">SIAMTEST_eSky4DApp</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="SQL_User" elementType="Argument">
+              <stringProp name="Argument.name">SQL_User</stringProp>
+              <stringProp name="Argument.value">sa</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="SQL_Pass" elementType="Argument">
+              <stringProp name="Argument.name">SQL_Pass</stringProp>
+              <stringProp name="Argument.value">P@ssw0rd</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC_ConnectionSQL" enabled="true">
+          <boolProp name="autocommit">true</boolProp>
+          <stringProp name="checkQuery">select 1</stringProp>
+          <stringProp name="connectionAge">5000</stringProp>
+          <stringProp name="dataSource">My_Driver_Pool</stringProp>
+          <stringProp name="dbUrl">jdbc:sqlserver://${ServerName};DatabaseName=${DB_Name}</stringProp>
+          <stringProp name="driver">com.microsoft.sqlserver.jdbc.SQLServerDriver</stringProp>
+          <stringProp name="initQuery"></stringProp>
+          <boolProp name="keepAlive">true</boolProp>
+          <stringProp name="password">${SQL_Pass}</stringProp>
+          <stringProp name="poolMax">2</stringProp>
+          <stringProp name="timeout">10000</stringProp>
+          <stringProp name="transactionIsolation">DEFAULT</stringProp>
+          <stringProp name="trimInterval">60000</stringProp>
+          <stringProp name="username">${SQL_User}</stringProp>
+        </JDBCDataSource>
+        <hashTree/>
+        <JDBCSampler guiclass="TestBeanGUI" testclass="JDBCSampler" testname="JDBC Request_GetUsingScreen" enabled="true">
+          <stringProp name="dataSource">My_Driver_Pool</stringProp>
+          <stringProp name="query">/*SELECT ScreenNumber AS ScreenCode FROM dbo.vs_SYS_Screen
+WHERE (ScreenNumber LIKE &apos;OM%&apos; OR ScreenNumber LIKE &apos;IN%&apos; OR ScreenNumber LIKE &apos;AR%&apos; OR ScreenNumber LIKE &apos;PO%&apos;)
+AND LEN(ScreenNumber) =7 --AND ScreenNumber =&apos;IN10100&apos;
+GROUP BY ModuleID,ScreenNumber
+ORDER BY ModuleID,ScreenNumber ASC
+*/
+SELECT DISTINCT t.ScreenNumber
+FROM (
+	SELECT * FROM dbo.SYS_AccessDetRights WHERE UserID=&apos;HOA&apos; AND DatabaseName LIKE &apos;%SIAM%&apos;
+	UNION
+	SELECT * FROM dbo.SYS_AccessDetRights WHERE UserID=&apos;DIST&apos; AND DatabaseName LIKE &apos;%SIAM%&apos;
+	UNION
+	SELECT * FROM dbo.SYS_AccessDetRights WHERE UserID=&apos;PhuongTTL&apos; AND DatabaseName LIKE &apos;%SIAM%&apos;
+	
+		) AS t
+WHERE (ScreenNumber LIKE &apos;OM%&apos; OR ScreenNumber LIKE &apos;IN%&apos; OR ScreenNumber LIKE &apos;AR%&apos; OR ScreenNumber LIKE &apos;PO%&apos;)
+AND LEN(ScreenNumber) =7 --AND ScreenNumber =&apos;IN10100&apos;
+ORDER BY t.ScreenNumber ASC</stringProp>
+          <stringProp name="queryArguments"></stringProp>
+          <stringProp name="queryArgumentsTypes"></stringProp>
+          <stringProp name="queryTimeout"></stringProp>
+          <stringProp name="queryType">Select Statement</stringProp>
+          <stringProp name="resultSetHandler">Store as Object</stringProp>
+          <stringProp name="resultVariable">ScreenCode</stringProp>
+          <stringProp name="variableNames">ScreenCode</stringProp>
+        </JDBCSampler>
+        <hashTree/>
+        <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="Excute_OpenScreen" enabled="true">
+          <stringProp name="ForeachController.inputVal">ScreenCode</stringProp>
+          <stringProp name="ForeachController.returnVal">ScreenNbr</stringProp>
+          <boolProp name="ForeachController.useSeparator">true</boolProp>
+        </ForeachController>
+        <hashTree>
+          <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc-ScreenLoad_${ScreenNbr}" enabled="true">
+            <stringProp name="WebDriverSampler.script">//var pkg = JavaImporter(org.openqa.selenium)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions
+var pkg = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var wait=new support_ui.WebDriverWait(WDS.browser, 10)
+var actions = new org.openqa.selenium.interactions.Actions(WDS.browser)
+var timeunit = java.util.concurrent.TimeUnit
+var vars = org.apache.jmeter.threads.JMeterContextService.getContext().getVariables()
+var File = java.io.File;
+var FileControl = org.apache.commons.io.FileUtils;
+
+
+function stvwait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end &lt; start + ms) {
+     end = new Date().getTime();
+ 	 }
+	}	
+
+
+
+	WDS.sampleResult.sampleStart();
+	var starttime = new Date().getTime();// starttime
+	WDS.browser.get(&apos;${ServerURLs}/${ScreenNbr}&apos;);	
+var Popup_BranchID=null	;
+try{
+	var Popup_BranchID= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@id,&apos;winPopup-body&apos;)]&quot;));	
+	WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;    Popup_BranchID:&apos; +  Popup_BranchID);
+} catch(exc)
+	{
+	vars.put(chkmask,0)
+	}
+	
+if (Popup_BranchID== null)
+{
+	wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;menuClickbtnRefresh-btnWrap&apos;)));// wait key appear
+	//var cboKey= WDS.browser.findElement((pkg.By.id(&apos;menuClickbtnNext-btnIconEl&apos;)));
+	var endtimeDOM = new Date().getTime();// starttime
+	var DOMTimeScr = endtimeDOM-starttime
+	if (${TimeDOM} ==1)
+		{
+		WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   Time to Screen Load - DOM Done  :&apos; + DOMTimeScr +&apos; (ms)&apos;);
+		}
+	
+	var flag =0 ;
+	var chkmask=null	
+	try {
+		do {
+		stvwait(${stvwait});
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   chua load xong :&apos; + chkmask);	
+		var chkmask= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@class,&apos;x-mask&apos;)]&quot;));		
+		}while (chkmask!=null)
+	}catch(exc)
+		{	
+		vars.put(chkmask,0)//unmask
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;    unmask :&apos; + chkmask);
+		}
+
+} else
+	{
+	wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(@id,&apos;cboPopupCpny-bodyEl&apos;)]/table/tbody/tr/td[2]&quot;)));// wait key appear	
+	var Popup_BranchID_arrow= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(@id,&apos;cboPopupCpny-bodyEl&apos;)]/table/tbody/tr/td[2]&quot;)));
+	try {
+		Popup_BranchID_arrow.click();			
+		wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&quot;//*[contains(text(),&apos;${BranchID}&apos;)]&quot;)));// wait key appear
+		}catch (exe)
+		{
+			stvwait(${stvwait});
+			}
+	
+	stvwait(${stvwait});	
+	var slt_BranchID= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(text(),&apos;${BranchID}&apos;)]&quot;)));
+	try {
+		slt_BranchID.click();	
+		}catch (exe)
+		{
+			stvwait(${stvwait});
+			}
+		
+	var cbo_OK= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(@id,&apos;btnPopupOk-btnIconEl&apos;)]&quot;)));
+	try {
+		cbo_OK.click();
+		}catch (exe)
+		{
+			stvwait(${stvwait});
+			}
+	wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;menuClickbtnRefresh-btnWrap&apos;)));// wait key appear
+	//var cboKey= WDS.browser.findElement((pkg.By.id(&apos;menuClickbtnNext-btnIconEl&apos;)));
+	var endtimeDOM = new Date().getTime();// starttime
+	var DOMTimeScr = endtimeDOM-starttime
+	if (${TimeDOM} ==1)
+		{
+		WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   Time to Screen Load - DOM Done  :&apos; + DOMTimeScr +&apos; (ms)&apos;);
+		}
+	
+	var flag =0 ;
+	var chkmask=null	
+	try {
+		do {
+		stvwait(${stvwait});
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;   chua load xong :&apos; + chkmask);	
+		var chkmask= WDS.browser.findElement(pkg.By.xpath(&quot;//*[contains(@class,&apos;x-mask&apos;)]&quot;));		
+		}while (chkmask!=null)
+	}catch(exc)
+		{	
+		vars.put(chkmask,0)//unmask
+		//WDS.log.info(&apos;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;    unmask :&apos; + chkmask);
+		}
+	
+	}
+
+
+
+// Exec to verify 	
+/*
+if(${ClickKey}==1)
+	{
+	var cboKey= WDS.browser.findElement((pkg.By.xpath(&quot;//*[contains(@id, &apos;txtRemark-inputEl&apos;)]&quot;)));
+	cboKey.click();	
+	WDS.sampleResult.sampleEnd();	
+	}
+else
+	{		
+		WDS.sampleResult.sampleEnd();		
+	}
+*/
+
+
+
+if(${screenshot}==1)
+	{
+var screenshot = WDS.browser.getScreenshotAs(pkg.OutputType.FILE)
+FileControl.copyFile(screenshot, new File(&quot;ImgResult/${ProjectCode}/${DateExc}/${ScreenCode}/&quot; + &apos;${ScreenCode}_${DateExc}_Screenload.png&apos;));
+	}
+
+
+    </stringProp>
+            <stringProp name="WebDriverSampler.parameters"></stringProp>
+            <stringProp name="WebDriverSampler.language">javascript</stringProp>
+          </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+          <hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">1000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="false">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">def response = prev.getResponseDataAsString();
+def path =&quot;D:\\1.Working\\100.JM\\Build\\PTeS_R1\\Runner\\bin\\Result\\PhaNam\\OM21100&quot;;
+def pathdata =&quot;D:\\1.Working\\100.JM\\Build\\PTeS_R1\\Runner\\bin\\Result\\PhaNam\\OM21100\\DataInfor&quot;;
+def filedata=&quot;OM21100_pcInventoryActiveByBranchFree.txt&quot;;
+def datacount=&quot;OM21100_countdata.txt&quot;;
+
+def json = new groovy.json.JsonSlurper().parseText(response)
+def data_size=json.data.size().toString();
+new File(path,filedata)&lt;&lt;response
+new File(pathdata,datacount)&lt;&lt; &quot;\n 488 /PhaNamPerform/HQ/GetData?_dc=1570698800058&amp;action=read : [ &quot; + data_size +&quot;]&quot;</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">Result\SIAMTEST\SIAMTEST_ProcessSalesOrd_table.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>true</samplerData>
+            <xml>true</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">Result\SIAMTEST\SIAMTEST_ProcessSalesOrd_tree.xml</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

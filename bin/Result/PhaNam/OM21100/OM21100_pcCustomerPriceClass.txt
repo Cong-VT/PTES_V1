@@ -1,0 +1,1 @@
+{"data":[{"PriceClassID":"CK10","Descr":"Gi?m 10 %"},{"PriceClassID":"CK5","Descr":"Gi?m 5 %"},{"PriceClassID":"MD","Descr":"M?c ??nh"}], "total": 0}

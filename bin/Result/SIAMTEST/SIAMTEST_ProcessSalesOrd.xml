@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="156" it="0" lt="156" ct="70" ts="1572857796314" s="false" lb="134 /Siam2/OM20502/GetQRCode" rc="500" rm="Internal Server Error" tn="Thread Group 1-1" dt="text" by="11289" sby="526" ng="1" na="1" hn="HQ_PC015">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Referer: https://portal.hqsoft.vn:7443/Siam2/OM20502
+Accept-Language: en-US,vi-VN;q=0.8,vi;q=0.5,en;q=0.3
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+Accept: */*
+Host: portal.hqsoft.vn:7443
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;&#xd;
+&lt;html&gt;&#xd;
+    &lt;head&gt;&#xd;
+        &lt;title&gt;SESSIONTIMEOUTGETQRCODEOM205022&lt;/title&gt;&#xd;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xd;
+        &lt;style&gt;&#xd;
+         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xd;
+         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xd;
+         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xd;
+         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xd;
+         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xd;
+         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xd;
+         .marker {font-weight: bold; color: black;text-decoration: none;}&#xd;
+         .version {color: gray;}&#xd;
+         .error {margin-bottom: 10px;}&#xd;
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xd;
+         @media screen and (max-width: 639px) {&#xd;
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xd;
+         }&#xd;
+         @media screen and (max-width: 479px) {&#xd;
+          pre { width: 280px; }&#xd;
+         }&#xd;
+        &lt;/style&gt;&#xd;
+    &lt;/head&gt;&#xd;
+&#xd;
+    &lt;body bgcolor=&quot;white&quot;&gt;&#xd;
+&#xd;
+            &lt;span&gt;&lt;H1&gt;Server Error in &apos;/Siam2&apos; Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xd;
+&#xd;
+            &lt;h2&gt; &lt;i&gt;SESSIONTIMEOUTGETQRCODEOM205022&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xd;
+&#xd;
+            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xd;
+&#xd;
+            &lt;b&gt; Description: &lt;/b&gt;An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.&#xd;
+&#xd;
+            &lt;br&gt;&lt;br&gt;&#xd;
+&#xd;
+            &lt;b&gt; Exception Details: &lt;/b&gt;System.Exception: SESSIONTIMEOUTGETQRCODEOM205022&lt;br&gt;&lt;br&gt;&#xd;
+&#xd;
+            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xd;
+&#xd;
+            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xd;
+               &lt;tr&gt;&#xd;
+                  &lt;td&gt;&#xd;
+                      &lt;code&gt;&#xd;
+&#xd;
+An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.&lt;/code&gt;&#xd;
+&#xd;
+                  &lt;/td&gt;&#xd;
+               &lt;/tr&gt;&#xd;
+            &lt;/table&gt;&#xd;
+&#xd;
+            &lt;br&gt;&#xd;
+&#xd;
+            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xd;
+&#xd;
+            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xd;
+               &lt;tr&gt;&#xd;
+                  &lt;td&gt;&#xd;
+                      &lt;code&gt;&lt;pre&gt;&#xd;
+&#xd;
+[Exception: SESSIONTIMEOUTGETQRCODEOM205022]&#xd;
+   HQ.eSkyFramework.CustomAuthorizeAttribute.OnActionExecuting(ActionExecutingContext filterContext) +6892&#xd;
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeActionMethodFilterAsynchronously(IActionFilter filter, ActionExecutingContext preContext, Func`1 nextInChain) +145&#xd;
+   System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeActionMethodFilterAsynchronously(IActionFilter filter, ActionExecutingContext preContext, Func`1 nextInChain) +980&#xd;
+   System.Web.Mvc.Async.&amp;lt;&amp;gt;c__DisplayClass37.&amp;lt;BeginInvokeActionMethodWithFilters&amp;gt;b__31(AsyncCallback asyncCallback, Object asyncState) +264&#xd;
+   System.Web.Mvc.Async.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +146&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout) +202&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag) +112&#xd;
+   System.Web.Mvc.Async.&amp;lt;&amp;gt;c__DisplayClass25.&amp;lt;BeginInvokeAction&amp;gt;b__1e(AsyncCallback asyncCallback, Object asyncState) +955&#xd;
+   System.Web.Mvc.Async.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +146&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout) +166&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag) +28&#xd;
+   System.Web.Mvc.&amp;lt;&amp;gt;c__DisplayClass1d.&amp;lt;BeginExecuteCore&amp;gt;b__17(AsyncCallback asyncCallback, Object asyncState) +50&#xd;
+   System.Web.Mvc.Async.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +146&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout) +166&#xd;
+   System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state) +497&#xd;
+   System.Web.Mvc.Async.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +146&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout) +166&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag) +28&#xd;
+   System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state) +372&#xd;
+   System.Web.Mvc.&amp;lt;&amp;gt;c__DisplayClass8.&amp;lt;BeginProcessRequest&amp;gt;b__2(AsyncCallback asyncCallback, Object asyncState) +144&#xd;
+   System.Web.Mvc.Async.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout) +146&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout) +166&#xd;
+   System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag) +28&#xd;
+   System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state) +272&#xd;
+   System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state) +110&#xd;
+   System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +1155&#xd;
+   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp;amp; completedSynchronously) +299&#xd;
+&lt;/pre&gt;&lt;/code&gt;&#xd;
+&#xd;
+                  &lt;/td&gt;&#xd;
+               &lt;/tr&gt;&#xd;
+            &lt;/table&gt;&#xd;
+&#xd;
+            &lt;br&gt;&#xd;
+&#xd;
+            &lt;hr width=100% size=1 color=silver&gt;&#xd;
+&#xd;
+            &lt;b&gt;Version Information:&lt;/b&gt;&amp;nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.0.30319.36480&#xd;
+&#xd;
+            &lt;/font&gt;&#xd;
+&#xd;
+    &lt;/body&gt;&#xd;
+&lt;/html&gt;&#xd;
+&lt;!-- &#xd;
+[Exception]: SESSIONTIMEOUTGETQRCODEOM205022&#xd;
+   at HQ.eSkyFramework.CustomAuthorizeAttribute.OnActionExecuting(ActionExecutingContext filterContext)&#xd;
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeActionMethodFilterAsynchronously(IActionFilter filter, ActionExecutingContext preContext, Func`1 nextInChain)&#xd;
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.InvokeActionMethodFilterAsynchronously(IActionFilter filter, ActionExecutingContext preContext, Func`1 nextInChain)&#xd;
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass37.&lt;BeginInvokeActionMethodWithFilters&gt;b__31(AsyncCallback asyncCallback, Object asyncState)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)&#xd;
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass25.&lt;BeginInvokeAction&gt;b__1e(AsyncCallback asyncCallback, Object asyncState)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)&#xd;
+   at System.Web.Mvc.Controller.&lt;&gt;c__DisplayClass1d.&lt;BeginExecuteCore&gt;b__17(AsyncCallback asyncCallback, Object asyncState)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)&#xd;
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)&#xd;
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)&#xd;
+   at System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClass8.&lt;BeginProcessRequest&gt;b__2(AsyncCallback asyncCallback, Object asyncState)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)&#xd;
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)&#xd;
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)&#xd;
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)&#xd;
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xd;
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)&#xd;
+--&gt;&lt;!-- &#xd;
+This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &amp;lt;customErrors mode=&quot;Off&quot;/&amp;gt;. Consider using &amp;lt;customErrors mode=&quot;On&quot;/&amp;gt; or &amp;lt;customErrors mode=&quot;RemoteOnly&quot;/&amp;gt; in production environments.--&gt;</responseData>
+  <java.net.URL>https://portal.hqsoft.vn:7443/Siam2/OM20502/GetQRCode?_dc=1572856370781&amp;action=read&amp;branchID=100043&amp;qrCodeLot=&amp;qrCodePac=0010P01010009.PN1804024.019&amp;orderNbr=DO191100001&amp;loadQR=0&amp;page=1&amp;start=0&amp;limit=50</java.net.URL>
+</httpSample>
+<httpSample t="36" it="0" lt="36" ct="0" ts="1572857796472" s="true" lb="141 /Siam2/HQ/CallMessageArray" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="500" sby="557" ng="1" na="1" hn="HQ_PC015">
+  <requestHeader class="java.lang.String">Connection: keep-alive
+X-Ext-Net: delta=true
+Referer: https://portal.hqsoft.vn:7443/Siam2/OM20502
+Accept-Language: en-US,vi-VN;q=0.8,vi;q=0.5,en;q=0.3
+Origin: https://portal.hqsoft.vn:7443
+Accept: */*
+X-Requested-With: XMLHttpRequest
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Accept-Encoding: gzip, deflate, br
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0
+Content-Length: 31
+Host: portal.hqsoft.vn:7443
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;script&quot;:&quot;Ext.Msg.show({\&quot;title\&quot;:\&quot;Message\&quot;,\&quot;buttons\&quot;:Ext.Msg.OK,\&quot;icon\&quot;:Ext.Msg.INFO,\&quot;minWidth\&quot;:500,\&quot;msg\&quot;:\&quot;Xử Lý Hoàn Tất\&quot;});&quot;}</responseData>
+  <java.net.URL>https://portal.hqsoft.vn:7443/Siam2/HQ/CallMessageArray</java.net.URL>
+</httpSample>
+<sample t="192" it="8" lt="192" ct="70" ts="1572857796309" s="false" lb="134 /Siam2/OM20502/GetQRCode" rc="" rm="Number of samples in transaction : 2, number of failing samples : 1" tn="Thread Group 1-1" dt="" by="11789" sby="1083" ng="1" na="1" hn="HQ_PC015">
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+
+</testResults>

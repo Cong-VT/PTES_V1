@@ -1,0 +1,2 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1570126075774,6471,jp@gc-OM20700_ScreenLoad,200,OK,PIN-OM-PP 1-1,text,true,,137005,0,1,1,https://portal.hqsoft.vn:7443/PhaNamPerform/OM20700,0,0,0

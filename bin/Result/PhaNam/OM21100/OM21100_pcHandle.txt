@@ -1,0 +1,1 @@
+{"data":[{"Code":"C","ToStatus":"C","Descr":"C?p Nh?t D? Li?u"},{"Code":"N","ToStatus":"","Descr":"Không Có"}], "total": 0}{"data":[{"Code":"C","ToStatus":"C","Descr":"C?p Nh?t D? Li?u"},{"Code":"N","ToStatus":"","Descr":"Không Có"}], "total": 0}
