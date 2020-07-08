@@ -1,0 +1,19 @@
+
+-- Role Sales ---
+Sync Master
+public InventorySync GetInventory(string userName, string branchID,[FromUri] List<TableVersion> tableVersions, string sessionID)
+public InventorySync GetItemLoc(string userName, string branchID, [FromUri] List<TableVersion> tableVersions, string sessionID)
+public GeneralSync GetGeneral(string userName, string branchID, [FromUri] List<TableVersion> tableVersions, string sessionID)
+public PriceSync GetSalesPrice(string userName, string branchID, int version, string sessionID)
+public CustomerSync GetCustomer(string userName, string branchID, int version, string sessionID)
+public DiscountSync GetDiscount(string userName, string branchID, int version, string sessionID)
+public ApplockSync GetApplock(string userName, string branchID, int version, string sessionID, string imei)
+public KnoxSync GetKnox(string userName, string branchID, int version, string sessionID, string imei)
+public ConfigSync GetConfig(string userName, string branchID, [FromUri] List<TableVersion> tableVersions, string sessionID, string langID)
+
+Sync End
+ [HttpPost]
+public EndSyncResult SyncEndResult(string userName, string branchID, string sessionID,[FromBody] EndSync data, string langID)
+
+ [HttpPost]
+public bool SyncLocation(string userName, string branchID, string sessionID, [FromBody] LocationSync data)
